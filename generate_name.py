@@ -19,7 +19,7 @@ def random_line(afile):
 
 
 def indefinite_article(ch):
-    if ch in ["a", "e", "i", "o"]:
+    if ch.lower() in ["a", "e", "i", "o"]:
         return "an"
     else:
         return "a"
