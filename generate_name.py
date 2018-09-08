@@ -1,6 +1,7 @@
 import os
 import random
 import tweepy
+import datetime
 from textgenrnn import textgenrnn
 
 CONSUMER_KEY = os.getenv("CONSUMER_KEY")
@@ -50,6 +51,10 @@ tweet = "{}, {} {} band".format(
     genre
 )
 
-print("Posting to {}: \"{}\"".format(user.name, tweet))
+print("{} - Posting to {}: \"{}\"".format(
+    datetime.datetime.now(),
+    user.name,
+    tweet)
+)
 
 api.update_status(tweet)
