@@ -1,2 +1,1 @@
-# mbrnn
-MB RNN
+# MB RNN
