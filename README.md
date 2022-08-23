@@ -12,5 +12,5 @@ python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
 
-*/11 * * * * /home/xxx/mbrnn/run.sh
+58 23 * * * sh /home/xxx/mbrnn/run.sh
 ```
